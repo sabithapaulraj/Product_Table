@@ -91,9 +91,50 @@ Keep the table design strictly in HTML for simplicity.
 </body>
 </html> 
 ```
+## CSS
+```
 
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+}
+caption {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: pink;
+}
+
+tbody tr:hover {
+    background-color: palegoldenrod;
+}
+
+```
 ## Output:
-![image](https://github.com/user-attachments/assets/c500d717-9c36-4b53-a695-e92354ffaa62)
+![image](https://github.com/user-attachments/assets/2c936775-24d4-41c0-b058-dde782549352)
+
 
 ## Result:
 A structured HTML table that displays product-related information, including product names, prices, and descriptions, useful for catalogs, listings, or e-commerce prototypes is created successfully.
